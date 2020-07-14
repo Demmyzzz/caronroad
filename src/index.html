@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello World</title>
+</head>
+<body>
+
+  <div class="wrapper__head">
+    <div class="head">
+  
+      <!--  logo + name company or text  -->
+      <div class="logo">
+  
+        <svg class="icon icon__logo">
+          <use xlink:href="#union"></use>
+        </svg>
+  
+        <div class="logo__text">дорстроймонтаж</div>
+  
+      </div>
+  
+      <svg class="icon icon__burger">
+        <use xlink:href="#burger"></use>
+      </svg>
+
+      <!--  navigation bar  -->
+      <ul class="menu">
+        <li class="menu__item"> 
+          <a href="#" class="menu__link">Каталог</a>
+          <svg class="icon icon__drop">
+            <use xlink:href="#drop"></use>
+          </svg>
+  
+          <ul class="drop">
+            <ul class="drop__item"> <a href="#" class="drop__link">Стандартные дорожные знаки</a> </ul>
+            <ul class="drop__item"> <a href="#" class="drop__link">Светодиодные дорожные знаки</a> </ul>
+            <ul class="drop__item"> <a href="#" class="drop__link">Заградительные светодиодные знаки</a> </ul>
+            <ul class="drop__item"> <a href="#" class="drop__link">Временные дорожные знаки</a> </ul>
+            <ul class="drop__item"> <a href="#" class="drop__link">Знаки пожарной безопасности</a> </ul>
+          </ul>
+  
+        </li>
+        <li class="menu__item"> <a href="#" class="menu__link">Прайс</a> </li>
+        <li class="menu__item"> <a href="#" class="menu__link">Информция</a> </li>
+        <li class="menu__item"> <a href="#" class="menu__link">Доставка</a> </li>
+        <li class="menu__item"> <a href="#" class="menu__link">Контакты</a> </li>
+        <li class="menu__item">
+
+          <div class="download">
+  
+            <svg class="icon icon__xlsx">
+              <use xlink:href="#xlsx"></use>
+            </svg>
+            <p class="download__text">Скачать прайс</p>
+      
+          </div>
+
+        </li>
+        <li class="menu__item ">
+          <div class="phone">
+  
+            <div class="phone__item">
+      
+              <svg class="icon icon__phone">
+                <use xlink:href="#phone"></use>
+              </svg>
+              <!--  add styles for text on phone  -->
+              <p class="phone__text">8 (8412) 71-03-30,</p>
+      
+            </div>
+            <div class="phone__item">
+      
+              <svg class="icon icon__phone">
+                <use xlink:href="#phone"></use>
+              </svg>
+              <!--  add styles for text on phone  -->
+              <p class="phone__text">8 (8412) 25-70-04</p>
+      
+            </div>
+      
+          </div>
+        </li>
+      </ul>
+  
+      <!--  download icon + link on xlsx file  -->
+      <div class="download disable">
+  
+        <svg class="icon icon__xlsx">
+          <use xlink:href="#xlsx"></use>
+        </svg>
+        <p class="download__text">Скачать прайс</p>
+  
+      </div>
+  
+      <!--  num phone  -->
+      <div class="phone disable">
+  
+        <div class="phone__item">
+  
+          <svg class="icon icon__phone">
+            <use xlink:href="#phone"></use>
+          </svg>
+          <!--  add styles for text on phone  -->
+          <p class="phone__text">8 (8412) 71-03-30,</p>
+  
+        </div>
+        <div class="phone__item">
+  
+          <svg class="icon icon__phone">
+            <use xlink:href="#phone"></use>
+          </svg>
+          <!--  add styles for text on phone  -->
+          <p class="phone__text">8 (8412) 25-70-04</p>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+
+  <!--  Toggle banner or gasket  -->
+  <div class="banner" id="banner">
+
+    <video class="banner__video" poster="./assets/img/caronroad.png" loop muted tabindex="0">
+      <source src="./assets/video/caronroad.mp4" type='video/mp4; codecs="vp8, vorbis"' />
+
+   </video>
+
+   <div class="banner__container">
+     <div class="title__banner">Производство и продажа <p class="yellow">дорожных знаков</p> в Пензе</div>
+     <p class="banner__text">
+        Производство в соответствии ГОСТу. <br>
+        Доставка по всей территории России.
+     </p>
+     <button class="btn btn__banner">оставить заявку</button>
+   </div>
+
+  </div>
+
+  <div class="gasket" id="gasket">
+    <div class="wrapper">
+      <div class="form__container">
+        <div class="form">
+  
+          <svg class="icon icon__close">
+            <use xlink:href="#close0"></use>
+          </svg>
+
+          <p class="title">Оставьте заявку</p>
+          <p class="form__text">Внесите данные в форму</p>
+          <input class="form__input" value="Ваше имя">
+          <input class="form__input" value="Ваш телефон">
+          <input class="form__input" value="Ваш e-mail">
+          <textarea 
+          class="form__area" 
+          name="" 
+          id="" 
+          cols="30" 
+          rows="10" 
+          placeholder="Текст заявки*" ></textarea>
+          <p class="form__text-low" >
+            Важно! Заявка оставляется в форме:<br>
+            1. Название. 2. Типоразмер знака. 3. Тип пленки<br>
+            4. Временный/посоянный. 5. Кол-во
+          </p>
+          <p class="form__link">Прикрепить свой файл</p>
+          <button class="btn btn__form">отправить</button>
+          <p class="form__text-low">Нажимая кнопку, вы даете согласие на обработку</p>
+          <p class="form__link">персональных данных</p>
+  
+        </div>
+  
+        <div class="thanks">
+            <svg class="icon icon__close">
+                <use xlink:href="#close0"></use>
+              </svg>
+          <p class="title">Спасибо</p>
+          <p class="thanks__text">
+            Заявка принята. <br>
+            В ближайшее время с Вами свяжется наш<br>
+            менеджер.
+          </p>
+        </div>
+  
+      </div>
+  
+     </div>
+  </div>
+  <!--  end toggle  -->
+
+
+  <div class="sign">
+
+    <div class="sign__item">
+
+      <div class="wrapper__sign">
+        <svg class="icon icon__sign">
+          <use xlink:href="#defoult-sign"></use>
+        </svg>
+      </div>
+
+      <div class="sign__text"> Стандартные <br> дорожные знаки </div>
+
+    </div>
+
+    <div class="sign__item">
+
+      <div class="wrapper__sign">
+        <svg class="icon icon__sign">
+          <use xlink:href="#light-sign"></use>
+        </svg>
+      </div>
+
+      <div class="sign__text"> Светодиодные <br> дорожные знаки </div>
+  
+    </div>
+
+    <div class="sign__item">
+
+      <div class="wrapper__sign">
+        <svg class="icon icon__sign">
+          <use xlink:href="#stop-sign"></use>
+        </svg>
+      </div>
+      <div class="sign__text"> Заградительные <br> светодиодные знаки </div>
+  
+    </div>
+
+    <div class="sign__item">
+
+      <div class="wrapper__sign">
+        <svg class="icon icon__sign">
+          <use xlink:href="#time-sign"></use>
+        </svg>
+      </div>
+      <div class="sign__text"> Временные <br> дорожные знаки </div>
+      
+    </div>
+
+    <div class="sign__item">
+
+      <div class="wrapper__sign">
+        <svg class="icon icon__sign">
+          <use xlink:href="#fire-sign"></use>
+        </svg>
+      </div>
+      <div class="sign__text"> Знаки пожарной <br> безопасности </div>
+        
+    </div>
+
+  </div>
+
+  <div class="preeminence">
+    <p class="title">
+        Прайс-лист
+    </p>
+    <div class="preeminence__text">
+        Наша продукция соответствует техническому регламенту Таможенного союза ТР ТС 014/2011 «О безопасности <br>
+        автомобильных дорог» и имеет соответствующий сертификат. <br>
+        <br>
+        Все дорожные знаки производятся в четком соответствии ГОСТ 52290-2004 и ГОСТ 32945-2014
+    </div>
+  </div>
+
+  <div class="wrapper wrapper__list">
+    <table class="list">
+  
+      <tr class="list__row">
+        <th rowspan="2" class="list__head list__union">Знаки</th>
+        <th colspan="2" class="list__head">Пленка инженерная, тип А</th>
+        <th colspan="2" class="list__head">Пленка высокоинтенс., тип Б</th>
+        <th colspan="2" class="list__head">Пленка микропризм., тип В</th>
+      </tr>
+  
+      <tr class="list__row">
+        
+        <th class="list__head">II типоразмер</th>
+        <th class="list__head">III типоразмер</th>
+        <th class="list__head">II типоразмер</th>
+        <th class="list__head">III типоразмер</th>
+        <th class="list__head">II типоразмер</th>
+        <th class="list__head">III типоразмер</th>
+      </tr>
+  
+      <tr class="list__row">
+        <td class="list__item">
+          
+          <img src="./common.blocks/list/image2.png" alt="" class="listt__img">
+
+        </td>
+        <td class="list__item">1 250</td>
+        <td class="list__item">1 800</td>
+        <td class="list__item">1 950</td>
+        <td class="list__item">2 970</td>
+        <td class="list__item">2 550</td>
+        <td class="list__item">4 450</td>
+      </tr>
+  
+      <tr class="list__row">
+        <td class="list__item"> <img src="./common.blocks/list/image3.png" alt="" class="list__img"> </td>
+        <td class="list__item">1 300</td>
+        <td class="list__item">1 900</td>
+        <td class="list__item">1 980</td>
+        <td class="list__item">3 500</td>
+        <td class="list__item">2 600</td>
+        <td class="list__item">4 560</td>
+      </tr>
+  
+      <tr class="list__row">
+        <td class="list__item"> <img src="./common.blocks/list/image4.png" alt="" class="list__img"> </td>
+        <td class="list__item">1 300</td>
+        <td class="list__item">1 900</td>
+        <td class="list__item">1 980</td>
+        <td class="list__item">3 500</td>
+        <td class="list__item">2 600</td>
+        <td class="list__item">4 560</td>
+      </tr>
+  
+      <tr class="list__row">
+        <td class="list__item"> <img src="./common.blocks/list/image5.png" alt="" class="list__img"> </td>
+        <td class="list__item">2 954,6</td>
+        <td class="list__item">4 700</td>
+        <td class="list__item">5 500</td>
+        <td class="list__item">7 800</td>
+        <td class="list__item">6 300</td>
+        <td class="list__item">9 850</td>
+      </tr>
+  
+      <tr class="list__row">
+        <td class="list__item"> <img src="./common.blocks/list/image6.png" alt="" class="list__img"> </td>
+        <td class="list__item">1 300</td>
+        <td class="list__item">1 900</td>
+        <td class="list__item">1 980</td>
+        <td class="list__item">3 500</td>
+        <td class="list__item">2 600</td>
+        <td class="list__item">4 560</td>
+      </tr>
+  
+      <tr class="list__row">
+        <td class="list__item"> <img src="./common.blocks/list/image8.png" alt="" class="list__img"><img src="./common.blocks/list/image7.png" alt="" class="list__img"> </td>
+        <td colspan="2" class="list__item">1 350</td>
+        <td colspan="2" class="list__item">2 560</td>
+        <td colspan="2" class="list__item">3 400</td>
+      </tr>
+  
+      <tr class="list__row">
+        <td class="list__item"> <img src="./common.blocks/list/image9.png" alt="" class="list__img"> </td>
+        <td class="list__item">1 850</td>
+        <td class="list__item">2 700</td>
+        <td class="list__item">3 300</td>
+        <td class="list__item">5 450</td>
+        <td class="list__item">4 250</td>
+        <td class="list__item">6 770</td>
+      </tr>
+  
+    </table>
+  </div>
+
+  <div class="wrapper wrapper__download">
+    <button class="btn btn__price">
+      смотреть весь прайс
+    </button>
+    <div class="download">
+
+          <svg class="icon icon__xlsx">
+            <use xlink:href="#xlsx"></use>
+          </svg>
+          <p class="download__price">Скачать прайс</p>
+    
+    </div>
+    
+  </div>
+
+  <div class="wrapper__choice">
+
+    <div class="wrapper choice">
+
+      <div class="choice__left">
+        <div class="title title__choice">
+            Какой типоразмер выбрать?
+        </div>
+  
+        <div class="choice__text">
+            Компания ООО Дорстроймонтаж изготавливает знаки<br>
+            всех типоразмеров. Согласно ГОСТ Р 52290-2004 типоразмеры<br>
+            дорожных знаков выбираются в соответствии с таблицей:<br>
+        </div>
+  
+        <div class="choice__view">
+            Смотреть таблицу
+        </div>
+      </div>
+
+      <div class="choice__right">
+        <img class="choice__img" src="./assets/img/sign.png" alt="">
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="wrapper">
+    <div class="difference">
+  
+      <div class="difference__left">
+        <img class="difference__img" src="./assets/img/avery.png" alt="">
+      </div>
+      <div class="difference__right">
+
+        <div class="title">
+          В чем отличия между пленками?
+        </div>
+        <div class="difference__text">
+          По ГОСТу есть несколько типов (классов) светоотражающих пленок <br>
+          отличающихся техническими характеристиками (в основном по <br>
+          светоотражению и сроку службы) и местом установки знаков.
+        </div>
+        <div class="difference__view">Подробнее</div>
+
+      </div>
+  
+    </div>
+  </div>
+
+  <div class="wrapper__grid">
+    <div class="wrapper">
+        <p class="title">
+            Почему стоит выбрать нас?
+        </p>
+      <div class="wrapper__card">
+    
+          <div class="card">
+      
+            <div class="wrapper__icon-card">
+            	<svg class="icon icon__card">
+            	  <use xlink:href="#recommended"></use>
+              </svg>
+            </div>
+            <div class="card__title"> Высокое качество </div>
+            <div class="card__text"> Контролируем качество продукции на всех этапах производства </div>
+      
+          </div>
+      
+          <div class="card">
+      
+            <div class="wrapper__icon-card">
+            	<svg class="icon icon__card">
+            	  <use xlink:href="#gost"></use>
+              </svg>
+            </div>
+            <div class="card__title"> Изготавливаем по ГОСТу </div>
+            <div class="card__text"> Вся продукция соответствует нормам ГОСТ и требованиям ГИБДД </div>
+      
+          </div>
+      
+          <div class="card">
+      
+            <div class="wrapper__icon-card">
+            	<svg class="icon icon__card">
+            	  <use xlink:href="#certificate"></use>
+              </svg>
+            </div>
+            <div class="card__title"> Сертификат  </div>
+            <div class="card__text"> Вся продукция имеет сертификат "Международный стандарт качества" </div>
+      
+          </div>
+      
+          <div class="card">
+      
+            <div class="wrapper__icon-card">
+            	<svg class="icon icon__card">
+            	  <use xlink:href="#calendar"></use>
+              </svg>
+            </div>
+            <div class="card__title"> Оперативность </div>
+            <div class="card__text"> Благодаря отлаженному производству, изготавливаем более тысячи знаков в день </div>
+      
+          </div>
+      
+          <div class="card">
+      
+            <div class="wrapper__icon-card">
+            	<svg class="icon icon__card">
+            	  <use xlink:href="#wallet"></use>
+              </svg>
+            </div>
+            <div class="card__title"> Гибкая система скидок </div>
+            <div class="card__text"> Для постоянных заказчиков и крупных партнеров готовы предложить систему скидок и индивидуальные условия сотрудничества </div>
+      
+          </div>
+      
+          <div class="card">
+      
+            <div class="wrapper__icon-card">
+            	<svg class="icon icon__card">
+            	  <use xlink:href="#shield"></use>
+              </svg>
+            </div>
+            <div class="card__title"> Гарантия  </div>
+            <div class="card__text"> На все изделия предоставляется гарантия </div>
+      
+          </div>
+      
+          <div class="card">
+      
+            <div class="wrapper__icon-card">
+            	<svg class="icon icon__card">
+            	  <use xlink:href="#truck"></use>
+              </svg>
+            </div>
+            <div class="card__title"> Доставка </div>
+            <div class="card__text"> Доставка дорожных знаков осуществляется по всей территории России </div>
+      
+          </div>
+      
+          <div class="card">
+      
+            <div class="wrapper__icon-card">
+            	<svg class="icon icon__card">
+            	  <use xlink:href="#truck"></use>
+              </svg>
+            </div>
+            <div class="card__title"> Монтаж </div>
+            <div class="card__text"> В индивидуальном порядке готовы оказать услуги по монтажу дорожных знаков </div>
+      
+          </div>
+      
+          <div class="card">
+      
+            <div class="wrapper__icon-card">
+            	<svg class="icon icon__card">
+            	  <use xlink:href="#russia"></use>
+              </svg>
+            </div>
+            <div class="card__title"> Участвуем в госзакупках </div>
+            <div class="card__text">  </div>
+      
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+
+    <div class="about">
+
+      <div class="about__left">
+
+        <div class="title">О нас?</div>
+        <div class="about__text">
+            Компания ООО Дорстроймонтаж занимается изготовлением 
+            дорожных знаков всех видов. Здесь вы можете заказать дорожные 
+            знаки II и III типоразмеров со светоотражающей поверхностью из 
+            световозвращающих пленок типа А, Б или В, а также знаки 
+            индивидуального проектирования. 
+            Грамотно налаженное производство позволяет изготавливать и 
+            доставлять качественную продукцию в максимально короткие 
+            сроки.
+        </div>
+
+      </div>
+
+      <div class="about__right">
+
+        <div class="wrapper__about">
+          <svg class="icon icon__about">
+            <use xlink:href="#union"></use>
+          </svg>
+          <div class="about__img-text">ДорСтройМонтаж</div>
+        </div>
+    
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="footer">
+
+    <div class="wrapper wrapper__footer">
+
+      <ul class="footer__list">
+        <li class="footer__item"><a href="#" class="footer__link"> Cтандартные дорожные знаки </a></li>
+        <li class="footer__item"><a href="#" class="footer__link"> Cветодиодные дорожные знаки </a></li>
+        <li class="footer__item"><a href="#" class="footer__link"> Заградительные светодиодные знаки </a></li>
+        <li class="footer__item"><a href="#" class="footer__link"> Временные дорожные знаки </a></li>
+        <li class="footer__item"><a href="#" class="footer__link"> Знаки пожарной безопасности </a></li>
+      </ul>
+
+      <ul class="footer__list">
+        <li class="footer__item"><a href="#" class="footer__link"> Прайс </a></li>
+        <li class="footer__item"><a href="#" class="footer__link"> Информация </a></li>
+        <li class="footer__item"><a href="#" class="footer__link"> Доставка </a></li>
+        <li class="footer__item"><a href="#" class="footer__link"> Политика конфиденциальности </a></li>
+      </ul>
+
+      <div class="address">
+
+        <p class="address__item">
+          Адрес:<br> 
+          г. Пенза, ул. Космодемьянской, 5
+        </p>
+        <p class="address__item">
+            Телефон:<br> 
+            8 (8412) 71-03-30, 25-70-04
+        </p>
+        <p class="address__item">
+            E-mail:<br> 
+            info@dsm58.ru
+        </p>
+
+      </div>
+
+      <div class="wrapper__info">
+        <div class="wrapper__about">
+            <svg class="icon icon__logo">
+              <use xlink:href="#union"></use>
+            </svg>
+            <div class="footer__logo-text">ДорСтройМонтаж</div>
+        </div>
+        <p class="info__text">© 2019 ДорСтройМонтаж.</p>
+        <p class="info__text">Разработка сайта - onlinebees.ru</p>
+      </div>
+
+    </div>
+
+  </footer>
+  
+</body>
+</html>

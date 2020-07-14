@@ -1,0 +1,17 @@
+@import '../../less/variables.less';
+
+.logo {
+  display: flex;
+
+  &__text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 0 8px;
+    @media screen and (max-width: 320px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}

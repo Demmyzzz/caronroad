@@ -1,0 +1,68 @@
+@color-html: #e5e5e5;
+@color-text: #ffffff;
+
+/* icon */
+@color-yellow: #ffb71b;
+@color-white: #ffffff;
+@color-head: #2b2831;
+@color-green: #219653;
+@color-active: #3a3a47;
+@color-table: #13131d;
+@color-second-text: #858585;
+
+/* border color */
+@border-price: 1px solid #f3f3f3;
+@border-onTarget: 1px solid #ffb71b;
+@border-difference: 6px solid #ffb71b;
+@color-blind-gray: #050202;
+@border-form: 1px solid #858585;
+
+/* btn */
+@btn-hover: #ffdc5e;
+@btn-active: #ffb71b;
+
+@keyframes appear {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes onTarget {
+  0% {
+    color: @color-white;
+  }
+  100% {
+    color: @color-yellow;
+    background-color: @color-active;
+  }
+}
+
+@keyframes drop {
+  0% {
+    padding: 0 0 0 0;
+    z-index: -100;
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    padding: 8px 0 0 0;
+    z-index: 1;
+    display: block;
+    opacity: 1;
+  }
+}
+
+.yellow {
+  color: @color-yellow;
+}
+.active {
+  display: block;
+}
+.disable {
+  @media screen and (max-width: 320px) {
+    display: none;
+  }
+}

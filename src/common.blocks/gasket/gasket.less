@@ -1,0 +1,25 @@
+@import '../../less/variables.less';
+
+.gasket {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../assets/img/caronroad.png') center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: @color-head;
+    opacity: .7;
+    z-index: 105;
+  }
+}

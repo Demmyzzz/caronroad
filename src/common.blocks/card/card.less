@@ -1,0 +1,42 @@
+@import '../../less/variables.less';
+
+.card {
+  margin: 0 auto 24px auto;
+  height: 208px;
+  width: 336px;
+  color: @color-head;
+  background-color: #f3f3f3;
+  padding: 40px 24px 0 48px;
+  position: relative;
+
+  @media screen and (max-width: 320px) {
+    padding: 40px 24px 0 80px;
+  }
+
+  &:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    @media screen and (max-width: 320px) {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      width: 188px;
+    }
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0 0 0;
+  }
+
+  &:hover {
+    background-color: @color-yellow;
+    transition: .3s ease-in-out;
+  }
+}

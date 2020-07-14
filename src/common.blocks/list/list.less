@@ -1,0 +1,65 @@
+@import '../../less/variables.less';
+
+.list {
+  color: @color-table;
+  border-spacing: 0px;
+  margin: 32px auto 0;
+  width: 1416px;
+  position: relative;
+
+  &::before {
+    content: 'Наши цены';
+    position: absolute;
+    right: calc(-50%);
+    top: 0;
+    font-weight: bold;
+    font-size: 96px;
+    color: @color-second-text;
+    opacity: .1;
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+  }
+
+  &__head {
+    background-color: @color-head;
+    color: @color-white;
+    line-height: 24px;
+    font-weight: bold;
+    height: 38px;
+  }
+
+  &__union {
+    width: 352px;
+  }
+
+  &__row:nth-child(odd) {
+    background-color: @color-white;
+  }
+
+  &__row:hover {
+    background-color: @color-html;
+    transition: .3s ease-in-out;
+  }
+
+  &__row:hover &__item {
+    border-top-color: #ffb71b;
+    border-bottom-color: #ffb71b;
+    transition: .3s ease-in-out;
+  }
+  &__row:hover &__item:first-child {
+    border-left-color: #ffb71b;
+    transition: .3s ease-in-out;
+  }
+  &__row:hover &__item:last-child {
+    border-right-color: #ffb71b;
+    transition: .3s ease-in-out;
+  }
+
+  &__item {
+    width: 173px;
+    height: 140px;
+    text-align: center;
+    border: @border-price;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,48 @@
+@import '../../less/variables.less';
+
+.sign {
+  margin: 130px 0 0 0;
+  color: @color-head;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 320px) {
+    margin: 32px 0 0 0;
+  }
+
+
+  &__item {
+    height: 168px;
+    width: 264px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 24px 0 0;
+    background-color: @color-white;
+    align-items: flex-end;
+    @media screen and (max-width: 320px) {
+      margin: 64px auto 0;
+    }
+  }
+
+  &__item:hover {
+    background-color: @color-yellow;
+    transition: .3s ease-in-out;
+  }
+
+  &__item:last-child {
+    margin: 0;
+    @media screen and (max-width: 320px) {
+      margin: 64px auto 0;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+    color: @color-head;
+    margin: 0 auto 40px auto;
+  }
+}

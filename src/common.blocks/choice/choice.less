@@ -1,0 +1,34 @@
+@import '../../less/variables.less';
+
+
+.choice {
+  position: relative;
+  z-index: 110;
+  display: flex;
+  justify-content: space-around;
+  &__left {
+    padding: 88px 0 112px 0;
+  }
+  &__text {
+    margin: 32px 0 32px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: @color-white;
+  }
+  &__view {
+    color: @color-white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+  }
+  &__right {
+    height: 456px;
+    width: 335px;
+    margin: -56px 0 0 0;
+    @media screen and (max-width: 320px) {
+      display: none;
+    }
+  }
+}

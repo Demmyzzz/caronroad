@@ -1,0 +1,59 @@
+@import '../../less/variables.less';
+
+.banner {
+  height: 724px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../assets/img/caronroad.png') center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 320px) {
+    height: 384px;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 110;
+    width: 692px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__text {
+    text-align: center;
+    margin: 32px 0 48px 0;
+    @media screen and (max-width: 320px) {
+      margin: 16px 0 32px 0;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 724px;
+    width: 100%;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: @color-head;
+    opacity: .7;
+    z-index: 105;
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../less/variables.less';
+
+.drop {
+  position: absolute;
+  display: none;
+  z-index: -100;
+  opacity: 0;
+  @media screen and (max-width: 320px) {
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+  &__item {
+    line-height: 40px;
+    width: 376px;
+    padding: 0 0 0 16px;
+    background-color: @color-head;
+    @media screen and (max-width: 320px) {
+      width: 100%;
+      line-height: 24px;
+      padding: 8px 16px;
+    }
+  }
+
+  &__item:hover {
+    animation-name: onTarget;
+    animation-duration: .2s;
+    color: @color-yellow;
+    background-color: @color-active;
+  }
+}

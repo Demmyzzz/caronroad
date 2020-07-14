@@ -1,0 +1,69 @@
+@import '../../less/variables.less';
+
+.icon {
+  &__logo {
+    fill: @color-yellow;
+    height: 31.5px;
+    width: 31.5px;
+    @media screen and (max-width: 320px) {
+      height: 16px;
+      width: 16px;
+    }
+  }
+  &__burger {
+    fill: @color-white;
+    width: 24px;
+    height: 16px;
+    display: none;
+    @media screen (max-width: 320px) {
+      display: block;
+    }
+  }
+  &__drop {
+    fill: @color-white;
+    height: 7.5px;
+    width: 12px;
+    margin: 0 0 2.5px 8px;
+  }
+  &__xlsx {
+    fill: @color-green;
+    height: 24px;
+    width: 21.2px;
+  }
+  &__phone {
+    fill: @color-yellow;
+    height: 18px;
+    width: 18px;
+  }
+  &__sign {
+    height: 64px;
+    width: 64px;
+  }
+  &__sign:last-child {
+    height: 50px;
+  }
+  &__list {
+    height: 64px;
+    fill: @color-head;
+  }
+  &__card {
+    height: 56px;
+    width: 56px;
+  }
+  &__about {
+    fill: @color-yellow;
+    height: 72px;
+    width: 72px;
+  }
+  &__close {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+  &__close:active {
+    fill: @color-head;
+    transition: .3s ease-in-out;
+  }
+}

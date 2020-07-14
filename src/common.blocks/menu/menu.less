@@ -1,0 +1,85 @@
+@import '../../less/variables.less';
+
+.menu {
+  display: flex;
+  line-height: 72px;
+  font-weight: 500;
+
+  @media screen and (max-width: 320px) {
+    line-height: 24px;
+    flex-direction: column;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    z-index: 115;
+    background-color: @color-head;
+    padding: 0 0 0 16px;
+  }
+
+  &__item {
+    list-style: none;
+    margin: 0 40px 0 0;
+    position: relative;
+    @media screen and (max-width: 320px) {
+      padding: 8px 0 0 0;
+    }
+  }
+  &__item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 18px;
+    height: 4px;
+    background-color: @color-yellow;
+    @media screen and (max-width: 320px) {
+      content: none;
+    }
+  }
+  &__item:hover::after {
+    right: 0;
+    animation-name: appear;
+    animation-duration: .3s;
+  }
+  &__item:first-child:hover .drop {
+    animation-name: drop;
+    animation-duration: .5s;
+    padding: 8px 0 0 0;
+    z-index: 1;
+    display: block;
+    opacity: 1;
+  }
+  &__item:last-child {
+    margin: 0;
+  }
+  &__item:nth-child(6) {
+    padding: 24px 0 0 0;
+  }
+  &__item:nth-child(n+6):nth-child(-n+7) {
+    margin: 0 0 32px 0;
+    display: none;
+    @media screen and (max-width: 320px) {
+      display: block;
+    }
+  }
+  &__link {
+    line-height: 24px;
+    @media screen and (max-width:320px) {
+      position: relative;
+    }
+  }
+  &__link:hover::before {
+    right: 0;
+    animation-name: appear;
+    animation-duration: .3s;
+  }
+  &__link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 4px;
+    // right: 0;
+    background-color: @color-yellow;
+  }
+}
