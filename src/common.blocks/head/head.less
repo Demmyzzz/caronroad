@@ -2,14 +2,19 @@
 
 .head {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 1416px;
+  max-width: 1416px;
   margin: 0 auto;
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 1440px) {
     // width: 288px;
     margin: 0;
     position: relative;
     padding: 0 8px;
+  }
+  @media screen and (max-width: 320px) {
+    width: 320px;
+    position: relative;
+    padding: 0;
   }
 }

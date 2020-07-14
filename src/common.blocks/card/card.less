@@ -3,7 +3,7 @@
 .card {
   margin: 0 auto 24px auto;
   height: 208px;
-  width: 336px;
+  max-width: 336px;
   color: @color-head;
   background-color: #f3f3f3;
   padding: 40px 24px 0 48px;
@@ -14,7 +14,9 @@
   }
 
   &:nth-child(3n+3) {
-    margin-right: 0;
+    @media screen and (max-width: 320px) {
+      margin-right: 0;
+    }
   }
 
   &__title {
