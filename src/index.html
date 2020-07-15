@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hello World</title>
+
 </head>
 <body>
 
@@ -123,7 +124,7 @@
   </div>
 
   <!--  Toggle banner or gasket  -->
-  <div class="banner" id="banner">
+  <div class="banner">
 
     <video class="banner__video" poster="./assets/img/caronroad.png" loop muted tabindex="0">
       <source src="./assets/video/caronroad.mp4" type='video/mp4; codecs="vp8, vorbis"' />
@@ -136,7 +137,7 @@
         Производство в соответствии ГОСТу. <br>
         Доставка по всей территории России.
      </p>
-     <button class="btn btn__banner">оставить заявку</button>
+     <button id="banner" class="btn btn__banner" click="enterForm()">оставить заявку</button>
    </div>
 
   </div>
